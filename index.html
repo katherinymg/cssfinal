@@ -19,12 +19,15 @@
     <body>
         <header>
         <!--NAV BAR-->
-        
-<ul>
-    <li><i class="fa-solid fa-cake-candles"></i> PASTELERIA FRANCESA</li>
-    <li>CATÁLOGO</li>
-    <li>CONTACTO</li>
-</ul>
+        <div class="logo"><i class="fa-solid fa-cake-candles fa-3x"  pull="left"></i></div>
+        <div class="menu">
+            <ul>
+                <li> <strong>PASTELERIA FRANCESA</strong> </li>
+                <a href="#catalogo"><li>CATÁLOGO</li></a>
+               <a href="#redsocial"> <li>CONTACTO</li></a>
+            </ul>
+        </div>
+
         
 
         </header>
@@ -36,7 +39,7 @@
 
       <div class="galeria">
 
-        <div class="card">
+        <div class="card" id="catalogo">
             <div class="contenedores"><img src="./assets/img/pastel1.jpg" alt="foto de pastel"></div>
             <p>Pastel Princesa Sofia</p>
             <p>Precio: 20.000 la caja</p>
@@ -70,7 +73,7 @@
         <div class="card">
             <div class="contenedores"><img src="./assets/img/pastel6.jpg" alt="foto de pastel"></div>
             <p>Pastel Luterino</p>
-            <p>Precio: 20.000 la caja</p>
+            <p id="redsocial">Precio: 20.000 la caja</p>
             <button><i class="fa-solid fa-cart-shopping"></i></button>
         </div>
 
@@ -81,8 +84,13 @@
 
 
         <!--FOOTER-->
-        <footer>
-        <p>© 2024 Todos los derechos reservados.</p>
+        <footer >
+            <p>Contáctame en!</p> 
+            <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://web.facebook.com/
+            "><i class="fa-brands fa-facebook"></i></a>
+            
+        
         </footer>
 
 

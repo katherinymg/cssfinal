@@ -5,27 +5,55 @@
     font-family: "Alegreya Sans", sans-serif;
   font-weight: 300;
   font-style: normal;
+  text-decoration: none;
 }
 
 header {
-    background-color: #E6A4B4;    
+    background-color: #E6A4B4;
     display: flex;
-    list-style: none;
+    gap: 50px;
+    
+}
+
+.menu {
+    display: flex;
     align-items: center;
     justify-content: center;
+    color: black;
+    
 }
+
+
+
+.logo {
+    margin: 10px 10px;
+}
+
 
 h1 {
     margin-top: 10px;
 text-align: center;
 }
 
-header>ul {
-        display: flex;
-    gap: 15px;
+.menu>ul {
+    display: flex;
+    gap: 10px;
     list-style: none;
     align-items: center;
     justify-content: center;
+    
+    
+}
+.menu>li {
+    text-decoration: none;
+    color: black;
+}
+
+li:hover {
+    background-color: #F3D7CA;
+    cursor: pointer; 
+    box-shadow:  0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in;
 }
 
 main {
@@ -62,8 +90,22 @@ button {
     border-radius: 7px;
 }
 
+button:hover {
+    cursor: pointer; 
+    box-shadow:  0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.2);
+    transition: all 0.3s ease-in;
+}
+
 .contenedores>img{
     width: 100%;
+    border-radius: 7px;
+    
+}
+
+img:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in;
 }
 
 .contenedores {
@@ -100,3 +142,73 @@ body {
     grid-template-rows: 70px calc(100vh - 70px - 40px) 40px;
     grid-template-columns: auto;
 }
+
+@media (min-width: 576px) {
+    body{
+        grid-template-areas: 
+        'header main'        
+        'header footer';
+        grid-template-rows: calc(100vh - 40px) 40px;
+        grid-template-columns: 100px auto;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    main {
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .galeria {
+        display: flex;
+        flex-wrap: wrap;  
+        justify-content: center;
+        align-items: center;
+        width: 100%;  
+flex-direction: row;
+    }
+
+
+    .contenedores>img{
+        width: 100%;
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+
+        img:hover {
+            transform: scale(1.4);
+            transition: all 0.3s ease-in;
+        }
+
+        .menu>ul {
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+            list-style: none;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+.card {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+
+
+}
+}}
